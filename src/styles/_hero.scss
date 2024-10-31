@@ -1,0 +1,45 @@
+@use 'variaveis';
+
+.hero{
+    height: 80vh;
+    padding: 100px 0;
+    width: 100%;
+    background-image: url(../images/fundo_the_batman.jpg);
+    background-position: 30% 20%;
+    background-size: cover;
+
+    &__container{
+        padding-left: 50px;
+
+        &__title{
+            max-width: 450px;
+            width: 100%;
+            padding-top: 200px;
+        }
+    
+        &__text{
+            color: variaveis.$cordotextoheader;
+            font-size: large;
+            font-weight: bold;
+            padding-top: 5px;
+            padding-bottom: 10px;
+            
+        }
+    
+        &__button{
+            font-weight: bold;
+            font-size: large;
+            background-color: variaveis.$cordefundobotao;
+            border-radius: 8px;
+            width: 100%;
+            height: 50px;
+            max-width: 350px;
+            border: none;
+
+            &:hover{
+                cursor: pointer;
+                background-color: #fff;
+            }
+        }
+    }
+}

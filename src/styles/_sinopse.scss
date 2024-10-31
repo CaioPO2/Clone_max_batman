@@ -1,0 +1,32 @@
+@use 'variaveis';
+
+.sinopse{
+    padding-left: 50px;
+
+    &__header{
+        color: variaveis.$cordotextoheader;
+        font-size: 32px;
+        font-weight: bold;
+        padding-top: 70px;
+        padding-bottom: 18px;
+    }
+
+    &__text{
+        color: variaveis.$cordotextoheader;
+        font-size: 22px;
+        max-width: 700px;
+        padding-bottom: 16px;
+    }
+
+    &__estilo{
+        color: variaveis.$cordotextoheader;
+        font-size: 18px;
+        padding-bottom: 16px;
+    }
+
+    &__disclaimer{
+        font-size: 14px;
+        color: variaveis.$cordotextoheader;
+        padding-bottom: 20px;
+    }
+}
