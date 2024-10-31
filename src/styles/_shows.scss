@@ -1,0 +1,47 @@
+@use 'variaveis';
+
+.shows{
+    padding: 10px 36px 4px;
+    &__list{
+        display: none;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 12px;
+        padding-top: 20px;
+
+        &--is-active{
+            display: grid;
+        }
+
+        &__item{
+            img{
+                max-width: 100%;
+                height: 350px;
+
+                &:hover{
+                    cursor: pointer;
+                    border: 3px solid #fff;
+                }
+            }
+        }
+    }
+
+    &__tabs{
+        border-bottom: 1px solid variaveis.$cordotexto;
+        &__button{
+            color: variaveis.$cordotexto;
+            font-size: 18px;
+            border: none;
+            background-color: transparent;
+            padding-bottom: 9px;
+            margin-right: 60px;
+
+            &:hover{
+                cursor: pointer;
+            }
+
+            &--is-active{
+                border-bottom: 3px solid variaveis.$cordotexto;
+            }
+        }
+    }
+}
