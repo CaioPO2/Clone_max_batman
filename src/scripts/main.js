@@ -1,5 +1,18 @@
 document.addEventListener('DOMContentLoaded', function(){
     const buttons = document.querySelectorAll('[data-tab-button]');
+
+    const herosection = document.querySelector('.hero');
+    const alturahero = herosection.clientHeight;
+
+    window.addEventListener('scroll', function(){
+        const posicaoAtual = window.scrollY;
+
+        if (posicaoAtual < alturahero){
+            ocultaelemntoHeader();
+        }else{
+            exibeelementoHeader();
+        }
+    })
     
     for (let i = 0; i < buttons.length; i++){
         buttons[i].addEventListener('click', function(botao){
@@ -12,6 +25,16 @@ document.addEventListener('DOMContentLoaded', function(){
         })
     }
 })
+
+function ocultaelemntoHeader(){
+    const header = document.querySelector('header');
+    header.classList.add('header--is-hidden');
+}
+
+function exibeelementoHeader(){
+    const header = document.querySelector('header');
+    header.classList.remove('header--is-hidden');
+}
 
 function removebotaoAtivo(){
     const buttons = document.querySelectorAll('[data-tab-button]');
