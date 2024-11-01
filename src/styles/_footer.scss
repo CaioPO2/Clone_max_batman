@@ -1,0 +1,37 @@
+@use 'variaveis';
+
+.footer{
+    padding-top: 200px;
+    padding-right: 40px;
+
+    &__container{
+        width: 100%;
+        margin: 0 auto;
+        text-align: right;
+
+        &__text{
+            color: variaveis.$cordotextoheader;
+            padding-bottom: 20px;
+            font-size: 14px;
+        }
+
+        &__links{
+            display: inline-block;
+
+            &__item{
+                color: variaveis.$cordotextoheader;
+                text-decoration: none;
+                padding-left: 20px;
+                padding-bottom: 40px;
+                font-size: 16px;
+
+                &:hover{
+                    cursor: pointer;
+                    color: variaveis.$cordotexto;
+                }
+            }
+
+            
+        }
+    }
+}
