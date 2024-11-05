@@ -29,4 +29,21 @@
         color: variaveis.$cordotextoheader;
         padding-bottom: 20px;
     }
+
+    @media (max-width:760px){
+        padding-left: 20px;
+        padding-right: 20px;
+
+        &__header{
+            font-size: 24px;
+        }
+
+        &__text{
+            font-size: 18px;
+        }
+
+        &__estilo{
+            font-size: 14px;
+        }
+    }
 }

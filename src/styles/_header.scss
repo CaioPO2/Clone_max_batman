@@ -45,4 +45,14 @@
             }
         }
     }
+
+    @media (max-width:760px){
+        &__logo{
+            max-width: 60px;
+        }
+
+        .button{
+            font-size: 14px;
+        }
+    }
 }

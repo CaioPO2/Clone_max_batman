@@ -8,6 +8,14 @@
         gap: 12px;
         padding-top: 20px;
 
+        @media (max-width:760px){
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media (max-width:1024px){
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
         &--is-active{
             display: grid;
         }
@@ -27,6 +35,12 @@
 
     &__tabs{
         border-bottom: 1px solid variaveis.$cordotexto;
+
+        @media (max-width:760px){
+            white-space: nowrap;
+            overflow-x: scroll;
+        }
+
         &__button{
             color: variaveis.$cordotexto;
             font-size: 18px;
@@ -35,6 +49,10 @@
             padding-bottom: 9px;
             margin-right: 60px;
 
+            @media (max-width:760px){
+                margin-right: 20px;
+            }
+
             &:hover{
                 cursor: pointer;
             }
@@ -42,6 +60,10 @@
             &--is-active{
                 border-bottom: 3px solid variaveis.$cordotexto;
             }
+        }
+
+        @media (max-width:760px){
+            font-size: 16px;
         }
     }
 }

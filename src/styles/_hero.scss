@@ -37,6 +37,10 @@
             border: none;
             padding: 10px 24px 11px;
 
+            @media (max-width:760px){
+                max-width: 280px;
+            }
+
             &:hover{
                 cursor: pointer;
                 background-color: #fff;
